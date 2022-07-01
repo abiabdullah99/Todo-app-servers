@@ -35,7 +35,6 @@ async function run() {
       const productId = await TaskCollection.findOne(query);
       res.send(productId);
     });
-
     app.put("/tasks/:id", async (req, res) => {
       const id = req.params.id;
       const updatedUser = req.body;
